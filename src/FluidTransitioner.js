@@ -208,7 +208,7 @@ position, index,
       <TransitionItemsView
         {...handlers}
         navigation={this.props.navigation}
-        style={this.props.style}
+        style={[this.props.style, { backgroundColor: 'black' }]}
         progress={props.position}
         fromRoute={fromRoute}
         toRoute={toRoute}
@@ -413,7 +413,7 @@ const styles = StyleSheet.create({
   },
   scene: {
     position: 'absolute',
-    backgroundColor: 'transparent',
+    backgroundColor: 'black',
     top: 0,
     left: 0,
     right: 0,
